@@ -71,7 +71,7 @@ describe('API chaining',()=>{
                     }
                 })
                 .then((response)=>{
-                    expect(response.status).to.eq(204)
+                    expect(response.status).to.eq(20)
                 })
             })
             
