@@ -1,6 +1,4 @@
-# cypressAutomation
-
-# jenkins set up for local
+/*
 step 1) download jenkins either app or jenkins war file(i downloaded).
         keep it in c drive
 step 2) open cmd(as administrator)
@@ -15,4 +13,5 @@ step 4)jenkins set up
         * advance_> use custom workspace->dictionary(keep project path)(D:\MY LEARNING\Testing\cypessAutomation)
         * build set up->add build setup->execute windows batch commands-> put run command ie runtests": "npm run test --
         * apply-> save
-# jenkins setup for git
+
+*/

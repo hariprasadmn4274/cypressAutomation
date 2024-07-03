@@ -64,3 +64,30 @@ Cypress.Commands.add('getIframe',(iframeLocator)=>{
         .should('be.visible')
         .then(cy.wrap)
 })
+
+Cypress.Commands.add('customApiRequest', (url, method = 'GET', options = {}) => {
+    return cy.request({
+      url,
+      method,
+      failOnStatusCode: false, // Prevent Cypress from failing the test on non-2xx status codes
+      ...options
+    }).then((response) => {
+      if (response.status === 200) {
+        return response;
+      } else {
+        let errorMessage = `Unexpected status code: ${response.status}`;
+        switch (response.status) {
+          case 400:
+            errorMessage = 'Bad Request';
+            break;
+          case 401:
+            errorMessage = 'Unauthorized';
+            break;
+          case 500:
+            errorMessage = 'Internal Server Error';
+            break;
+        }
+        throw new Error(errorMessage);
+      }
+    });
+  });
