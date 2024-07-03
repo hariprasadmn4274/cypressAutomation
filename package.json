@@ -15,6 +15,7 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.8.2",

@@ -25,7 +25,6 @@ step 4)jenkins set up
         
 # jenkins setup for git
 # HTML report
-
 step 1) install cypress-mochawesome-reporter using below command
 
         "npm i --save-dev cypress-mochawesome-reporter"
@@ -55,3 +54,54 @@ step 4) run all spec or any one spec in terminal using below command
 step 5) to access report
 
         go to reports folder--> index.html copy its path(not relative path)--> serach in browser
+# allure report
+Step 1: Install Allure Dependencies
+
+        npm install --save-dev @shelex/cypress-allure-plugin
+
+Step 2: Update cypress.config.js
+
+const { defineConfig } = require("cypress");
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+
+module.exports = defineConfig({
+  reporter: 'cypress-mochawesome-reporter', // for reports
+
+  e2e: {
+    setupNodeEvents(on, config) {
+      // Mochawesome reporter setup
+      require('cypress-mochawesome-reporter/plugin')(on);
+
+      // Allure plugin setup
+      allureWriter(on, config);
+
+      return config;
+    },
+    env: {
+      allure: true,
+      allureResultsPath: 'allure-results'
+    },
+  },
+});
+
+Step 3: Update Support File
+
+import '@shelex/cypress-allure-plugin';
+
+Step 4: Run Tests and Generate Report
+
+        *Run Cypress Tests: Run your Cypress tests as usual. The test results will be saved in the allure-results directory.
+
+        npx cypress run
+
+        *Generate Allure Report: After running the tests, generate the Allure report using the Allure Commandline tool.
+
+        allure generate allure-results --clean
+
+        *Serve Allure Report: Serve the Allure report locally to view it in your browser.
+
+        allure open
+
+
+
+
