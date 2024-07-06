@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1720076991040' stop='1720077011853'>
+    <name>Xpathlocator</name>
+    <title>Xpathlocator</title>
+    <test-cases>
+        <test-case start='1720076991040' status='passed' stop='1720077011853'>
+            <name>chained xpath</name>
+            <title>chained xpath</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

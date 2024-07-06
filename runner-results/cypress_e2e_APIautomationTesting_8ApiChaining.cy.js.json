@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 2,
+  "passes": 1,
+  "pending": 0,
+  "failures": 1,
+  "start": "2024-07-04T06:32:46.586Z",
+  "duration": 2093,
+  "file": "cypress\\e2e\\APIautomationTesting\\8ApiChaining.cy.js"
+}

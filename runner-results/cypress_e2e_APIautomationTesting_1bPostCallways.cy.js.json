@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 3,
+  "passes": 3,
+  "pending": 0,
+  "failures": 0,
+  "start": "2024-07-04T06:32:26.112Z",
+  "duration": 1161,
+  "file": "cypress\\e2e\\APIautomationTesting\\1bPostCallways.cy.js"
+}

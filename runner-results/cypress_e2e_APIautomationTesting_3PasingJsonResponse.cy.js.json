@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 2,
+  "passes": 2,
+  "pending": 0,
+  "failures": 0,
+  "start": "2024-07-04T06:32:31.000Z",
+  "duration": 1147,
+  "file": "cypress\\e2e\\APIautomationTesting\\3PasingJsonResponse.cy.js"
+}

@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-07-04T07:12:59.697Z",
+    "end": "2024-07-04T07:13:14.016Z",
+    "duration": 14319,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "456c39ad-b599-4fd2-bce0-5c2992f1900b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\15Navigation.cy.js",
+      "file": "cypress\\e2e\\15Navigation.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "610529da-7ccb-41e3-bd80-4e39dbade8c3",
+          "title": "navigation using commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "navigation from page to page",
+              "fullTitle": "navigation using commands navigation from page to page",
+              "timedOut": null,
+              "duration": 10675,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\15Navigation.cy.js\\\\navigation using commands -- navigation from page to page (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.visit('https://demo.opencart.com/'); //home page\ncy.title().should('eq', 'Your Store');\ncy.xpath('//a[.=\"Cameras\"]').click(); // camera page\ncy.get('h2').should('have.text', \"Cameras\");\ncy.go('back'); //home page\ncy.title().should('eq', 'Your Store');\ncy.go('forward'); //camera page\ncy.xpath(\"//h2[normalize-space()='Cameras']\").should('have.text', \"Cameras\");\ncy.go(-1); //home page\ncy.title().should('eq', 'Your Store');\ncy.go(1); // camera page\ncy.xpath(\"//h2[normalize-space()='Cameras']\").should('have.text', \"Cameras\");\ncy.reload();\ncy.xpath(\"//h2[normalize-space()='Cameras']\").should('have.text', \"Cameras\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<h2#AYJX7.h2>' to have text 'Cameras', but the text was 'Verifying you are human. This may take a few seconds.'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<h2#AYJX7.h2>' to have text 'Cameras', but the text was 'Verifying you are human. This may take a few seconds.'\n    at Context.eval (webpack://cypressautomation/./cypress/e2e/15Navigation.cy.js:10:21)",
+                "diff": "- 'Verifying you are human. This may take a few seconds.'\n+ 'Cameras'\n"
+              },
+              "uuid": "3ee63c2c-4cb7-4937-9095-03618c0f56f1",
+              "parentUUID": "610529da-7ccb-41e3-bd80-4e39dbade8c3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3ee63c2c-4cb7-4937-9095-03618c0f56f1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10675,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

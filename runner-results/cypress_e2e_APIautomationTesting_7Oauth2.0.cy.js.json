@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 2,
+  "passes": 1,
+  "pending": 0,
+  "failures": 1,
+  "start": "2024-07-04T06:32:40.976Z",
+  "duration": 1807,
+  "file": "cypress\\e2e\\APIautomationTesting\\7Oauth2.0.cy.js"
+}
