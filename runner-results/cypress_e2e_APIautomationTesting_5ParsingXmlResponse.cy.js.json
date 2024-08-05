@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2024-07-04T06:32:34.422Z",
-  "duration": 1989,
+  "start": "2024-07-16T07:12:13.642Z",
+  "duration": 2366,
   "file": "cypress\\e2e\\APIautomationTesting\\5ParsingXmlResponse.cy.js"
 }

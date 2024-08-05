@@ -2,7 +2,7 @@ describe('Handling web tables',()=>{
 
     beforeEach('login',()=>{
 
-        cy.visit('https://demo.opencart.com/admin/index.php')
+        cy.visit('https://demo.opencart.com/admin/index.php/')
         cy.xpath('//input[@id="input-username"]').clear().type('demo')
         cy.xpath('//input[@id="input-password"]').clear().type('demo')
         cy.xpath('//button[@type="submit"]').click()//login button

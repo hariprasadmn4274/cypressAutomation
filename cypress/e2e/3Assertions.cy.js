@@ -16,6 +16,8 @@ describe('Assertions',()=>{
          .should('eq','https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
          */
         
+
+         //this below chaining called assertion chaining
          cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
          cy.url().should('include','orangehrm')
          .and('contain','orange')

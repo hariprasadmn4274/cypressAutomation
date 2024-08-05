@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 1,
-  "start": "2024-07-04T06:32:46.586Z",
-  "duration": 2093,
+  "start": "2024-07-16T07:12:25.220Z",
+  "duration": 2074,
   "file": "cypress\\e2e\\APIautomationTesting\\8ApiChaining.cy.js"
 }

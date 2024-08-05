@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2024-07-04T06:32:17.234Z",
-  "duration": 487,
+  "start": "2024-07-16T07:11:52.693Z",
+  "duration": 500,
   "file": "cypress\\e2e\\APIautomationTesting\\10ApiFilureErrorhandling.cy.js"
 }

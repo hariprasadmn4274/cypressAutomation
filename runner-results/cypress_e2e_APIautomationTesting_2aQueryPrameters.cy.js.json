@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2024-07-04T06:32:21.073Z",
-  "duration": 446,
+  "start": "2024-07-16T07:11:58.168Z",
+  "duration": 397,
   "file": "cypress\\e2e\\APIautomationTesting\\2aQueryPrameters.cy.js"
 }

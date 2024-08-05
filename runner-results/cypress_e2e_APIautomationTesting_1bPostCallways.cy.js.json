@@ -4,7 +4,7 @@
   "passes": 3,
   "pending": 0,
   "failures": 0,
-  "start": "2024-07-04T06:32:26.112Z",
-  "duration": 1161,
+  "start": "2024-07-16T07:12:00.062Z",
+  "duration": 1633,
   "file": "cypress\\e2e\\APIautomationTesting\\1bPostCallways.cy.js"
 }

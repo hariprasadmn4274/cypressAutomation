@@ -19,7 +19,7 @@ step 3) keep all run commands in pakage.json file-->within script
 step 4)jenkins set up
 
         * new item -> cypressLocal->select freestyle project-->ok
-        * advance_> use custom workspace->dictionary(keep project path)(D:\MY LEARNING\Testing\cypessAutomation)
+        * advance -> use custom workspace->dictionary(keep project path)(D:\MY LEARNING\Testing\cypessAutomation)
         * build set up->add build setup->execute windows batch commands-> put run command ie "runtests": "npm run test --"
         * apply-> save
         

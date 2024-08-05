@@ -2,9 +2,9 @@ describe('using deferent evironments url',()=>{
 
     it('prod and stage envi',()=>{
         cy.visit('')
-        // cy.visit('/ap/signin/')
+        // cy.visit('baseUrl')
 
-        cy.log('pring username is  '+ Cypress.env('username'))
+        cy.log(' username is  '+ Cypress.env('username'))
         /* syntax for using env in config file
         --------------------------------------
 

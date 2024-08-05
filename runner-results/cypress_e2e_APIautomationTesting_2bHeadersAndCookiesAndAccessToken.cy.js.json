@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2024-07-04T06:32:26.046Z",
-  "duration": 2628,
+  "start": "2024-07-16T07:12:03.844Z",
+  "duration": 3037,
   "file": "cypress\\e2e\\APIautomationTesting\\2bHeadersAndCookiesAndAccessToken.cy.js"
 }

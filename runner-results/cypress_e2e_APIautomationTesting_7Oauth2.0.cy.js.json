@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 1,
-  "start": "2024-07-04T06:32:40.976Z",
-  "duration": 1807,
+  "start": "2024-07-16T07:12:18.693Z",
+  "duration": 1865,
   "file": "cypress\\e2e\\APIautomationTesting\\7Oauth2.0.cy.js"
 }

@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2024-07-04T06:32:36.264Z",
-  "duration": 518,
+  "start": "2024-07-16T07:12:13.704Z",
+  "duration": 500,
   "file": "cypress\\e2e\\APIautomationTesting\\4JsonSchemaValidation.cy.js"
 }
